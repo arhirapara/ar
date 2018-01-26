@@ -1,0 +1,127 @@
+//
+//  profile.swift
+//  chatapp
+//
+//  Created by MACOS on 20/09/17.
+//  Copyright © 2017 MACOS. All rights reserved.
+//
+
+import UIKit
+
+class profile: UIViewController ,UIImagePickerControllerDelegate,UINavigationControllerDelegate,prodelegate{
+ 
+    let imgpicker =  UIImagePickerController()
+    
+    
+    @IBOutlet weak var lblcode: UILabel!
+    var str:[String] = []
+    @IBOutlet weak var lbl: UILabel!
+    
+    @IBOutlet weak var img: UIImageView!
+    
+    @IBOutlet weak var fna: UITextField!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "backimage")?.draw(in: self.view.bounds)
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        self.view.backgroundColor = UIColor(patternImage: image)
+        self.navigationController?.isNavigationBarHidden = false
+        navigationItem.setHidesBackButton(true, animated: true)
+        navigationItem.title = "Profile info"
+        lblcode.text = str[0]
+        print(str[0])
+        lbl.text = str[1]
+        
+        img.layer.cornerRadius = self.img.frame.size.width/2
+        self.img.clipsToBounds = true
+
+      
+        
+     let tap = UITapGestureRecognizer(target: self, action: #selector(self.handle))
+        tap.numberOfTapsRequired = 1
+        img.isUserInteractionEnabled = true
+        img.addGestureRecognizer(tap)
+        
+        /*        let dif = UserDefaults()
+        dif.set("1", forKey:  "user")
+  */
+        
+        
+        let emojiRanges = [
+            0x1F601...0x1F64F,
+            0x2702...0x27B0,
+            0x1F680...0x1F6C0,
+            0x1F170...0x1F251
+        ]
+        var emojiarray:[String] = []
+        for range in emojiRanges {
+            for i in range {
+                let c = String(UnicodeScalar(i)!)
+                emojiarray.append(c)
+            }
+        }
+        
+    }
+
+    
+    
+    
+    func returnstr(str: String) {
+        print(str)
+
+    }
+    
+    func handle(sender:UITapGestureRecognizer)
+    {
+         imgpicker.sourceType = .photoLibrary
+        imgpicker.delegate = self
+        self.present(imgpicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let img1 = info[UIImagePickerControllerOriginalImage]as! UIImage
+        img.image = img1
+        self.dismiss(animated: true, completion: nil
+        )
+    }
+    @IBAction func profile(_ sender: Any) {
+        
+    
+        let img1 = img.image
+        
+        let imgdata = UIImageJPEGRepresentation(img1!, 1.0)
+        
+        let base64string = imgdata?.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
+        
+      
+        let obj = profilemodel(moblie_no1: lbl.text!, name1: fna.text!, profile_pic1: base64string!, status1: "Hey.I am using chatapp...", code1: lblcode.text!)
+        print(lbl.text!)
+        let pro = profilecontroller()
+     //   pro.delegate = self
+        pro.registrationdetails(obj: obj, url: "http://localhost/chatapp/profile.php")
+      
+        let dif = UserDefaults()
+        dif.set(lbl.text!, forKey: "mob")
+      
+        let f = storyboard?.instantiateViewController(withIdentifier: "chat" ) as! chatfile
+        self.navigationController?.pushViewController(f, animated: true)
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
