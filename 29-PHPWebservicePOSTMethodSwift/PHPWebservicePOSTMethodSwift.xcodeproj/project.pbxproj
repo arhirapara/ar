@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		223C88731F0792A200B0FF5C /* first.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C88721F0792A200B0FF5C /* first.swift */; };
+		22CD64731F00F92D00954658 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CD64721F00F92D00954658 /* AppDelegate.swift */; };
+		22CD64751F00F92D00954658 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CD64741F00F92D00954658 /* ViewController.swift */; };
+		22CD64781F00F92D00954658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CD64761F00F92D00954658 /* Main.storyboard */; };
+		22CD647A1F00F92E00954658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22CD64791F00F92E00954658 /* Assets.xcassets */; };
+		22CD647D1F00F92E00954658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CD647B1F00F92E00954658 /* LaunchScreen.storyboard */; };
+		22CD64881F00F92E00954658 /* PHPWebservicePOSTMethodSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CD64871F00F92E00954658 /* PHPWebservicePOSTMethodSwiftTests.swift */; };
+		22CD64931F00F92E00954658 /* PHPWebservicePOSTMethodSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CD64921F00F92E00954658 /* PHPWebservicePOSTMethodSwiftUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22CD64841F00F92E00954658 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22CD64671F00F92D00954658 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22CD646E1F00F92D00954658;
+			remoteInfo = PHPWebservicePOSTMethodSwift;
+		};
+		22CD648F1F00F92E00954658 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22CD64671F00F92D00954658 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22CD646E1F00F92D00954658;
+			remoteInfo = PHPWebservicePOSTMethodSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		223C88721F0792A200B0FF5C /* first.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = first.swift; sourceTree = "<group>"; };
+		22CD646F1F00F92D00954658 /* PHPWebservicePOSTMethodSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHPWebservicePOSTMethodSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22CD64721F00F92D00954658 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22CD64741F00F92D00954658 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22CD64771F00F92D00954658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22CD64791F00F92E00954658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22CD647C1F00F92E00954658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22CD647E1F00F92E00954658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22CD64831F00F92E00954658 /* PHPWebservicePOSTMethodSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PHPWebservicePOSTMethodSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22CD64871F00F92E00954658 /* PHPWebservicePOSTMethodSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPWebservicePOSTMethodSwiftTests.swift; sourceTree = "<group>"; };
+		22CD64891F00F92E00954658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22CD648E1F00F92E00954658 /* PHPWebservicePOSTMethodSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PHPWebservicePOSTMethodSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22CD64921F00F92E00954658 /* PHPWebservicePOSTMethodSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPWebservicePOSTMethodSwiftUITests.swift; sourceTree = "<group>"; };
+		22CD64941F00F92E00954658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22CD646C1F00F92D00954658 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22CD64801F00F92E00954658 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22CD648B1F00F92E00954658 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22CD64661F00F92D00954658 = {
+			isa = PBXGroup;
+			children = (
+				223C88721F0792A200B0FF5C /* first.swift */,
+				22CD64711F00F92D00954658 /* PHPWebservicePOSTMethodSwift */,
+				22CD64861F00F92E00954658 /* PHPWebservicePOSTMethodSwiftTests */,
+				22CD64911F00F92E00954658 /* PHPWebservicePOSTMethodSwiftUITests */,
+				22CD64701F00F92D00954658 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22CD64701F00F92D00954658 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22CD646F1F00F92D00954658 /* PHPWebservicePOSTMethodSwift.app */,
+				22CD64831F00F92E00954658 /* PHPWebservicePOSTMethodSwiftTests.xctest */,
+				22CD648E1F00F92E00954658 /* PHPWebservicePOSTMethodSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22CD64711F00F92D00954658 /* PHPWebservicePOSTMethodSwift */ = {
+			isa = PBXGroup;
+			children = (
+				22CD64721F00F92D00954658 /* AppDelegate.swift */,
+				22CD64741F00F92D00954658 /* ViewController.swift */,
+				22CD64761F00F92D00954658 /* Main.storyboard */,
+				22CD64791F00F92E00954658 /* Assets.xcassets */,
+				22CD647B1F00F92E00954658 /* LaunchScreen.storyboard */,
+				22CD647E1F00F92E00954658 /* Info.plist */,
+			);
+			path = PHPWebservicePOSTMethodSwift;
+			sourceTree = "<group>";
+		};
+		22CD64861F00F92E00954658 /* PHPWebservicePOSTMethodSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				22CD64871F00F92E00954658 /* PHPWebservicePOSTMethodSwiftTests.swift */,
+				22CD64891F00F92E00954658 /* Info.plist */,
+			);
+			path = PHPWebservicePOSTMethodSwiftTests;
+			sourceTree = "<group>";
+		};
+		22CD64911F00F92E00954658 /* PHPWebservicePOSTMethodSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22CD64921F00F92E00954658 /* PHPWebservicePOSTMethodSwiftUITests.swift */,
+				22CD64941F00F92E00954658 /* Info.plist */,
+			);
+			path = PHPWebservicePOSTMethodSwiftUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22CD646E1F00F92D00954658 /* PHPWebservicePOSTMethodSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22CD64971F00F92E00954658 /* Build configuration list for PBXNativeTarget "PHPWebservicePOSTMethodSwift" */;
+			buildPhases = (
+				22CD646B1F00F92D00954658 /* Sources */,
+				22CD646C1F00F92D00954658 /* Frameworks */,
+				22CD646D1F00F92D00954658 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PHPWebservicePOSTMethodSwift;
+			productName = PHPWebservicePOSTMethodSwift;
+			productReference = 22CD646F1F00F92D00954658 /* PHPWebservicePOSTMethodSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22CD64821F00F92E00954658 /* PHPWebservicePOSTMethodSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22CD649A1F00F92E00954658 /* Build configuration list for PBXNativeTarget "PHPWebservicePOSTMethodSwiftTests" */;
+			buildPhases = (
+				22CD647F1F00F92E00954658 /* Sources */,
+				22CD64801F00F92E00954658 /* Frameworks */,
+				22CD64811F00F92E00954658 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22CD64851F00F92E00954658 /* PBXTargetDependency */,
+			);
+			name = PHPWebservicePOSTMethodSwiftTests;
+			productName = PHPWebservicePOSTMethodSwiftTests;
+			productReference = 22CD64831F00F92E00954658 /* PHPWebservicePOSTMethodSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22CD648D1F00F92E00954658 /* PHPWebservicePOSTMethodSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22CD649D1F00F92E00954658 /* Build configuration list for PBXNativeTarget "PHPWebservicePOSTMethodSwiftUITests" */;
+			buildPhases = (
+				22CD648A1F00F92E00954658 /* Sources */,
+				22CD648B1F00F92E00954658 /* Frameworks */,
+				22CD648C1F00F92E00954658 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22CD64901F00F92E00954658 /* PBXTargetDependency */,
+			);
+			name = PHPWebservicePOSTMethodSwiftUITests;
+			productName = PHPWebservicePOSTMethodSwiftUITests;
+			productReference = 22CD648E1F00F92E00954658 /* PHPWebservicePOSTMethodSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22CD64671F00F92D00954658 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "MAC OS";
+				TargetAttributes = {
+					22CD646E1F00F92D00954658 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					22CD64821F00F92E00954658 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 22CD646E1F00F92D00954658;
+					};
+					22CD648D1F00F92E00954658 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 22CD646E1F00F92D00954658;
+					};
+				};
+			};
+			buildConfigurationList = 22CD646A1F00F92D00954658 /* Build configuration list for PBXProject "PHPWebservicePOSTMethodSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22CD64661F00F92D00954658;
+			productRefGroup = 22CD64701F00F92D00954658 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22CD646E1F00F92D00954658 /* PHPWebservicePOSTMethodSwift */,
+				22CD64821F00F92E00954658 /* PHPWebservicePOSTMethodSwiftTests */,
+				22CD648D1F00F92E00954658 /* PHPWebservicePOSTMethodSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22CD646D1F00F92D00954658 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CD647D1F00F92E00954658 /* LaunchScreen.storyboard in Resources */,
+				22CD647A1F00F92E00954658 /* Assets.xcassets in Resources */,
+				22CD64781F00F92D00954658 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22CD64811F00F92E00954658 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22CD648C1F00F92E00954658 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22CD646B1F00F92D00954658 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CD64751F00F92D00954658 /* ViewController.swift in Sources */,
+				22CD64731F00F92D00954658 /* AppDelegate.swift in Sources */,
+				223C88731F0792A200B0FF5C /* first.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22CD647F1F00F92E00954658 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CD64881F00F92E00954658 /* PHPWebservicePOSTMethodSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22CD648A1F00F92E00954658 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CD64931F00F92E00954658 /* PHPWebservicePOSTMethodSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22CD64851F00F92E00954658 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22CD646E1F00F92D00954658 /* PHPWebservicePOSTMethodSwift */;
+			targetProxy = 22CD64841F00F92E00954658 /* PBXContainerItemProxy */;
+		};
+		22CD64901F00F92E00954658 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22CD646E1F00F92D00954658 /* PHPWebservicePOSTMethodSwift */;
+			targetProxy = 22CD648F1F00F92E00954658 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22CD64761F00F92D00954658 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22CD64771F00F92D00954658 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22CD647B1F00F92E00954658 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22CD647C1F00F92E00954658 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22CD64951F00F92E00954658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22CD64961F00F92E00954658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22CD64981F00F92E00954658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PHPWebservicePOSTMethodSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tops.PHPWebservicePOSTMethodSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		22CD64991F00F92E00954658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PHPWebservicePOSTMethodSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tops.PHPWebservicePOSTMethodSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		22CD649B1F00F92E00954658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PHPWebservicePOSTMethodSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tops.PHPWebservicePOSTMethodSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PHPWebservicePOSTMethodSwift.app/PHPWebservicePOSTMethodSwift";
+			};
+			name = Debug;
+		};
+		22CD649C1F00F92E00954658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PHPWebservicePOSTMethodSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tops.PHPWebservicePOSTMethodSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PHPWebservicePOSTMethodSwift.app/PHPWebservicePOSTMethodSwift";
+			};
+			name = Release;
+		};
+		22CD649E1F00F92E00954658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PHPWebservicePOSTMethodSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tops.PHPWebservicePOSTMethodSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PHPWebservicePOSTMethodSwift;
+			};
+			name = Debug;
+		};
+		22CD649F1F00F92E00954658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PHPWebservicePOSTMethodSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tops.PHPWebservicePOSTMethodSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PHPWebservicePOSTMethodSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22CD646A1F00F92D00954658 /* Build configuration list for PBXProject "PHPWebservicePOSTMethodSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22CD64951F00F92E00954658 /* Debug */,
+				22CD64961F00F92E00954658 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22CD64971F00F92E00954658 /* Build configuration list for PBXNativeTarget "PHPWebservicePOSTMethodSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22CD64981F00F92E00954658 /* Debug */,
+				22CD64991F00F92E00954658 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22CD649A1F00F92E00954658 /* Build configuration list for PBXNativeTarget "PHPWebservicePOSTMethodSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22CD649B1F00F92E00954658 /* Debug */,
+				22CD649C1F00F92E00954658 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22CD649D1F00F92E00954658 /* Build configuration list for PBXNativeTarget "PHPWebservicePOSTMethodSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22CD649E1F00F92E00954658 /* Debug */,
+				22CD649F1F00F92E00954658 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22CD64671F00F92D00954658 /* Project object */;
+}
