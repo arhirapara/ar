@@ -1,0 +1,155 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red170\green13\blue145;\red92\green38\blue153;\red196\green26\blue22;
+\red46\green13\blue110;\red63\green110\blue116;\red0\green116\blue0;\red14\green14\blue255;\red38\green71\blue75;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww13860\viewh12780\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf0 \CocoaLigature0 *******************************************************
+\f0\fs24 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs32 \cf0 Swift Desc :::::::\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf0 \CocoaLigature0 *******************************************************
+\f0\fs32 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf2 \CocoaLigature0 let\cf0  session = \cf3 URLSession\cf0 .\cf3 shared\cf0 \
+        \cf2 let\cf0  url = \cf4 "https://jyapi.togglewave.com/rcci.svc/getcontacts"\cf0 \
+        \cf2 let\cf0  request = \cf3 NSMutableURLRequest\cf0 (url:\cf3 NSURL\cf0 (string: url)\cf2 as\cf0 ! \cf3 URL\cf0 )\
+        request.\cf3 httpMethod\cf0  = \cf4 "POST"\cf0 \
+        request.\cf5 addValue\cf0 (\cf4 "application/json"\cf0 , forHTTPHeaderField: \cf4 "Content-Type"\cf0 )\
+        \
+        \cf2 let\cf0  param :[\cf3 String\cf0 :\cf3 AnyObject\cf0 ] =  [\cf4 "mynumber"\cf0 :\cf4 "09512468722"\cf0  \cf2 as\cf0  \cf3 AnyObject\cf0 ,\cf4 "apikey"\cf0 :\cf4 "TEST"\cf0  \cf2 as\cf0  \cf3 AnyObject\cf0 ]\
+       \
+       \
+        \cf2 do\cf0  \{\
+            \cf2 try\cf0   request.\cf3 httpBody\cf0  = \cf3 JSONSerialization\cf0 .\cf5 data\cf0 (withJSONObject: param, options: \cf3 JSONSerialization\cf0 .\cf3 WritingOptions\cf0 ())\
+            \cf2 let\cf0  task = session.\cf5 dataTask\cf0 (with: request \cf2 as\cf0  \cf3 URLRequest\cf0 , completionHandler: \{(data, response, error)\cf2 in\cf0 \
+                \
+                \cf2 if\cf0  \cf2 let\cf0  response = response\
+                \{\
+                    \cf2 let\cf0  nsHTTPResponse = response \cf2 as\cf0 ! \cf3 HTTPURLResponse\cf0 \
+                    \cf2 let\cf0  StatusCode = nsHTTPResponse.\cf3 statusCode\cf0 \
+                    \cf5 print\cf0 (\cf4 "Status Code :: \cf0 \\\cf4 (\cf0 StatusCode\cf4 )"\cf0 )\
+                \}\
+                \
+                \cf2 if\cf0  \cf2 let\cf0  error = error \{\
+                \cf5 print\cf0 (\cf4 "\cf0 \\\cf4 (\cf0 error\cf4 )"\cf0 )\
+                 \
+                \}\
+                \
+                \cf2 if\cf0  \cf2 let\cf0  data = data\
+                \{\
+                    \cf2 do\cf0 \{\
+                        \cf2 let\cf0  jsonResponse = \cf2 try\cf0  \cf3 JSONSerialization\cf0 .\cf5 jsonObject\cf0 (with: data, options: []) \cf2 as\cf0 ! \cf3 NSDictionary\cf0 \
+                        \
+                        \
+                        \
+                        \cf2 self\cf0 .\cf6 arrdata\cf0  = [jsonResponse] \cf2 as\cf0  [\cf3 NSDictionary\cf0 ]\
+                        \
+                        \cf5 print\cf0 (\cf2 self\cf0 .\cf6 arrdata\cf0 )\
+                    \}\
+                    \
+                    \cf2 catch\cf0 \{\
+                        \
+                    \}\
+                    \
+                \
+                \
+                \}\
+            \
+            \
+            \})\
+            task.\cf5 resume\cf0 ()\
+            \
+        \} \cf2 catch\cf0   \{\
+            \
+        \}\
+\
+*******************************************************\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs32 \cf0 \CocoaLigature1 Objective C Desc :::::::\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf0 \CocoaLigature0 *******************************************************
+\f0\fs32 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf7 \CocoaLigature0 	//resultURL = [[NSURL alloc] initWithString:@"{\field{\*\fldinst{HYPERLINK "https://jsonplaceholder.typicode.com/posts/"}}{\fldrslt \cf8 https://jsonplaceholder.typicode.com/posts/}}"];\cf0 \
+    \cf6 resultURL\cf0  = [[\cf3 NSURL\cf0  \cf5 alloc\cf0 ] \cf5 initWithString\cf0 :\cf4 @"https://reqres.in/api/register"\cf0 ];\
+    \cf6 theRequest\cf0  = [[\cf3 NSMutableURLRequest\cf0  \cf5 alloc\cf0 ] \cf5 initWithURL\cf0 :\cf6 resultURL\cf0 ];\
+    \cf6 theRequest\cf0 .\cf3 HTTPMethod\cf0  = \cf4 @"POST"\cf0 ;\
+    [\cf6 theRequest\cf0  \cf5 setValue\cf0 :\cf4 @"appliaction/json"\cf0  \cf5 forHTTPHeaderField\cf0 :\cf4 @"content-type"\cf0 ];\
+    [\cf6 theRequest\cf0  \cf5 setValue\cf0 :\cf4 @"no-cache"\cf0  \cf5 forHTTPHeaderField\cf0 :\cf4 @"cache-control"\cf0 ];\
+    \
+    \cf3 NSMutableDictionary\cf0  *params = [[\cf3 NSMutableDictionary\cf0  \cf5 alloc\cf0 ] \cf5 init\cf0 ];\
+    [params \cf5 setValue\cf0 :\cf4 @"sydney@fife"\cf0  \cf5 forKey\cf0 :\cf4 @"email"\cf0 ];\
+    [params \cf5 setValue\cf0 :\cf4 @"pistol"\cf0  \cf5 forKey\cf0 :\cf4 @"password"\cf0 ];\
+    \
+    \cf3 NSData\cf0  *data = [\cf3 NSJSONSerialization\cf0  \cf5 dataWithJSONObject\cf0 :params \cf5 options\cf0 :\cf5 NSJSONWritingPrettyPrinted\cf0  \cf5 error\cf0 :\cf2 nil\cf0 ];\
+    \cf3 NSString\cf0  *strParams = [[\cf3 NSString\cf0  \cf5 alloc\cf0 ] \cf5 initWithData\cf0 :data \cf5 encoding\cf0 :\cf5 NSUTF8StringEncoding\cf0 ];\
+    \cf6 theRequest\cf0 .\cf3 HTTPBody\cf0  = [strParams \cf5 dataUsingEncoding\cf0 :\cf5 NSUTF8StringEncoding\cf0 ];\
+    \
+    \cf6 stSession\cf0  = [\cf3 NSURLSession\cf0  \cf5 sharedSession\cf0 ];\
+    \
+    \cf3 NSURLSessionTask\cf0  *task = [\cf6 stSession\cf0  \cf5 dataTaskWithRequest\cf0 :\cf6 theRequest\cf0  \cf5 completionHandler\cf0 :^(\cf3 NSData\cf0  * \cf2 _Nullable\cf0  data, \cf3 NSURLResponse\cf0  * \cf2 _Nullable\cf0  response, \cf3 NSError\cf0  * \cf2 _Nullable\cf0  error) \{\
+      \
+        \cf5 dispatch_async\cf0 (\cf5 dispatch_get_main_queue\cf0 (), ^\{\
+       \
+            \cf2 if\cf0 (data != \cf2 nil\cf0 )\
+            \{\
+                \cf3 NSMutableDictionary\cf0  *response = [\cf3 NSJSONSerialization\cf0  \cf5 JSONObjectWithData\cf0 :data \cf5 options\cf0 :\cf5 NSJSONReadingAllowFragments\cf0  \cf5 error\cf0 :\cf2 nil\cf0 ];\
+                \cf7 //NSString *stError =[response objectForKey:@"error"];\cf0 \
+                \cf7 //NSMutableArray *arrData = [[NSMutableArray alloc] init];\cf0 \
+                \cf7 //arrData = [response objectForKey:]\cf0 \
+                \cf5 NSLog\cf0 (\cf4 @"RESPONSE : %@"\cf0 ,response);\
+            \}\
+            \
+        \});\
+      \
+    \}];\
+    [task \cf5 resume\cf0 ];\
+\
+******************************************************\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs32 \cf0 \CocoaLigature1 Reachability Desc :::::::
+\f1\fs22 \CocoaLigature0 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+\cf0 ******************************************************\
+ \cf7 // Allocate a reachability object\cf0 \
+ \cf6 Reachability\cf0  *reach = [\cf6 Reachability\cf0  \cf9 reachabilityWithHostName\cf0 :\cf4 @"www.google.com"\cf0 ];\
+    [[\cf3 NSNotificationCenter\cf0  \cf5 defaultCenter\cf0 ] \cf5 addObserver\cf0 :\cf2 self\cf0  \cf5 selector\cf0 :\cf2 @selector\cf0 (changed:) 	\cf5 name\cf0 :\cf6 kReachabilityChangedNotification\cf0  \cf5 object\cf0 :reach];\
+    [reach \cf9 startNotifier\cf0 ];\
+\
+\
+\
+-(\cf2 void\cf0 )changed:(\cf3 NSNotification\cf0  *)notification \{\
+    \cf6 Reachability\cf0  *reach1 = [notification \cf5 object\cf0 ];\
+    \cf2 if\cf0  (reach1.\cf9 isReachable\cf0 ) \{\
+        \cf5 NSLog\cf0 (\cf4 @"Connected"\cf0 );\
+    \}\
+    \cf2 else\cf0 \
+        \cf5 NSLog\cf0 (\cf4 @"Not Connected"\cf0 );\
+\}\
+*******************************************************\
+\
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs32 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+}
